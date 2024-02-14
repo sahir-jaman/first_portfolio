@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.hero-textEducation{
+    padding-top: 25px;
+    color: white;
+}
+
+.hero-textEducation h1{
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+}
+.hero-textEducation h1 i{
+    color: #2ecc71;
+    font-size: 30px;
+}
+
+.hero-textEducation h4{
+    color: #eee;
+    margin: 5px 0px 5px 0px;
+}
+.hero-textEducation ul{
+    color: #eee;
+    margin: 0px 0px 6px 18px;
+}
+.hero-textEducation button{
+    padding: 4px;
+    border: solid 3px #2ecc71;
+}
+
+@media  screen and (max-width:900px) {
+    nav .hamb{
+        display: initial;
+    }
+    .click{
+        top: 46px;
+    }
+    .click span{
+        position: absolute;
+        margin-top: 12px;
+    }
+    .click span:first-child{
+        transform: rotate(-40deg);
+    }
+    .click span:last-child(2){
+        opacity: 0;
+        margin: 0;
+    }
+    .click span:last-child{
+        transform: rotate(40deg);
+        top: 0;
+    }
+    nav .nav-list{
+        position: absolute;
+        top: 90px;
+        right: -65%;
+        bottom: 0;
+        width: 32%;
+        height: 50%;
+        background: black;
+        z-index: 2;
+        padding: 6% 9%;
+        transition: .3s right;
+        border-radius: 10px;
+    }
+    nav .nav-list li{
+        display: block;
+    }
+    nav .nav-list li a{
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+    nav .nav-list li.btn a{
+        position: absolute;
+        bottom: 0%;
+        right: 20%;
+        left: 20%;
+        padding: 7px 15px;
+        font-size: 14px;
+    }
+    nav .nav-list.open{
+        right: 0;
+    }
+}
